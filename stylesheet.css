@@ -5,11 +5,11 @@ body {
 
 a {
     text-decoration: none;
-} 
+}
 
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(2in, 5in));
     grid-template-rows: repeat(auto);
     grid-gap: 10px;
 }
@@ -22,6 +22,11 @@ a {
     margin: 10px 5px;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 1s
+}
+
+.button-link:hover {
+  transform: scale(1.05);
 }
 
 #drop-shadow {
