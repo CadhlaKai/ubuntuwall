@@ -9,9 +9,8 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    min-width: 2in;
-    grid-template-rows: repeat(auto);
+    grid-template-columns: repeat(auto-fill, minmax(43px,430px));
+    grid-template-rows: repeat(auto, minmax(22px,220px));
     grid-gap: 10px;
 }
 
