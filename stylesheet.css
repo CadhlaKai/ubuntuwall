@@ -3,6 +3,14 @@ body {
     text-align: center;
 }
 
+h1 {
+  text-shadow: 2px 2px LightGray;
+}
+
+p {
+  text-shadow: 2px 2px LightGray;
+}
+
 a {
     text-decoration: none;
 }
@@ -42,5 +50,6 @@ a {
 .button-text {
     margin-bottom: 10px;
     z-index: 2;
-    color: black;
+    color: white;
+    text-shadow: 2px 2px black;
 }
