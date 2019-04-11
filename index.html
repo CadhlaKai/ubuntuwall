@@ -2,237 +2,112 @@
 <html>
     <head>
         <title>Ubuntu Tribute</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
         <h1>Ubuntu Wallpapers</h1>
         <p>Choose a distro, select a wallpaper, and share a memory you have from a time when you had that wallpaper as your desktop background.<br />
         This memory doesn't have to be about computers, it can be about any memory that this photo brings back to you.</p>
 
-        <div class="container">
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/18.10-cosmic/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>18.10</h2>
-                        <hr>
-                        <h3>Cosmic<br>Cuttlefish</h3>
-                    </div>
+        <div class="container" style="grid-column-template ">
+            <div class="card" style="width: 18rem;">
+                <img src="ubuntu-wallpapers/18.10-cosmic/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 18.10<br>Cosmic Cuttlefish</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from winter 2018</p>
+                <a href="#" class="btn btn-primary">18.10 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/18.04-bionic/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-img">
-                        <div class="button-text">
-                            <h2>Ubuntu<br>18.04</h2>
-                            <hr>
-                            <h3>Bionic<br>Beaver</h3>
-                        </div>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="ubuntu-wallpapers/18.04-bionic/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 18.04<br>Bionic Beaver</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from summer 2018</p>
+                <a href="#" class="btn btn-primary">18.04 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/17.10-artful/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>17.10</h2>
-                        <hr>
-                        <h3>Artful<br>Aardvark</h3>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">                    
+                <img src="ubuntu-wallpapers/17.10-artful/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 17.10<br>Artful Aardvark</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from winter 2017</p>
+                <a href="#" class="btn btn-primary">17.10 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/17.04-zesty/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>17.04</h2>
-                        <hr>
-                        <h3>Zesty<br>Zapus</h3>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">                    
+                <img src="ubuntu-wallpapers/17.04-zesty/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 17.04<br>Zesty Zapus</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from summer 2017</p>
+                <a href="#" class="btn btn-primary">17.04 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/16.10-yakkety/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>16.10</h2>
-                        <hr>
-                        <h3>Yakkety<br>Yak</h3>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">                    
+                <img src="ubuntu-wallpapers/16.10-yakkety/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 16.10<br>Yakkety Yak</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from winter 2016</p>
+                <a href="#" class="btn btn-primary">16.10 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/16.04-xenial/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>16.04</h2>
-                        <hr>
-                        <h3>Xenial<br>Xerus</h3>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">                    
+                <img src="ubuntu-wallpapers/16.04-xenial/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 16.04<br>Xenial Xerus</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from summer 2016</p>
+                <a href="#" class="btn btn-primary">16.04 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/15.10-wily/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>15.10</h2>
-                        <hr>
-                        <h3>Wily<br>Werewolf</h3>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">                    
+                <img src="ubuntu-wallpapers/15.10-wily/warty-final-ubuntu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Ubuntu 15.10<br>Wily Werewolf</h5>
+                <p class="card-text">Check out more wallpapers and share your memories from winter 2015.</p>
+                <a href="#" class="btn btn-primary">15.10 Wallpapers</a>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/15.04-vivid/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>15.04</h2>
-                        <hr>
-                        <h3>Vivid<br>Vervet</h3>
-                    </div>
                 </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/14.10-utopic/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>14.10</h2>
-                        <hr>
-                        <h3>Utopic<br>Unicorn</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/14.04-trusty/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>14.04</h2>
-                        <hr>
-                        <h3>Trusty<br>Tahr</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/13.10-saucy/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>13.10</h2>
-                        <hr>
-                        <h3>Saucy<br>Salamander</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/13.04-raring/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>13.04</h2>
-                        <hr>
-                        <h3>Raring<br>Ringtail</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/12.10-quantal/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>12.10</h2>
-                        <hr>
-                        <h3>Quantal<br>Quetzal</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/12.04-precise/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>12.04</h2>
-                        <hr>
-                        <h3>Precise<br>Pangolin</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/11.10-oneiric/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>11.10</h2>
-                        <hr>
-                        <h3>Oneiric<br>Ocelot</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/11.04-natty/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>11.04</h2>
-                        <hr>
-                        <h3>Natty<br>Narwhal</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/10.10-maverick/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>10.10</h2>
-                        <hr>
-                        <h3>Maverick<br>Meerkat</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/10.04-lucid/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>10.04</h2>
-                        <hr>
-                        <h3>Lucid<br>Lynx</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/09.10-karmic/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>9.10</h2>
-                        <hr>
-                        <h3>Karmic<br>Koala</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/09.04-jaunty/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>9.04</h2>
-                        <hr>
-                        <h3>Jaunty<br>Jackalope</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="#"><div style="background-image: url(ubuntu-wallpapers/08.10-intrepid/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>8.10</h2>
-                        <hr>
-                        <h3>Intrepid<br>Ibex</h3>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="release-page/08.04-hardy.html"><div style="background-image: url(ubuntu-wallpapers/08.04-hardy/warty-final-ubuntu.png)" class="button-link" id="drop-shadow">
-                <div style="background: rgba(0, 0, 0, .15)" class="button-content">
-                    <div class="button-text">
-                        <h2>Ubuntu<br>8.04</h2>
-                        <hr>
-                        <h3>Hardy<br>Heron</h3>
-                    </div>
-                </div>
-            </div></a>
-
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
